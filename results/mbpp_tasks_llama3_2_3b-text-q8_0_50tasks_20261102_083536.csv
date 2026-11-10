@@ -1,0 +1,1563 @@
+model,task_index,task_id,function_name,status,passed,eval_rate_tok_sec,eval_count,eval_duration_sec,prompt_eval_rate_tok_sec,prompt_eval_count,prompt_eval_duration_sec,total_duration_sec,rss_gib,generated_code
+llama3.2:3b-text-q8_0,0,11,remove_Occ,FAIL (Assertion/Syntax),0,17.18,256,14.903,97.33,71,0.729,15.635,4.364,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class literals.
+- Do not include any class operators.
+- Do not include any class functions.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class literals.
+- Do not"
+llama3.2:3b-text-q8_0,1,12,sort_matrix,FAIL (Assertion/Syntax),0,17.14,256,14.937,141.33,70,0.495,15.451,4.397,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class literals.
+- Do not include any class operators.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class literals.
+- Do not include any class operators.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class literals.
+- Do not include any class operators.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class literals.
+- Do not include any class operators.
+- Do not include"
+llama3.2:3b-text-q8_0,2,14,find_Volume,FAIL (Assertion/Syntax),0,17.17,256,14.91,149.1,66,0.443,15.372,4.432,"- Include a docstring that explains the function's purpose and expected input/output.
+- Include a test that demonstrates the function's functionality.
+- Include a test that demonstrates the function's edge cases.
+- Include a test that demonstrates the function's error handling.
+- Include a test that demonstrates the function's performance.
+- Include a test that demonstrates the function's scalability.
+- Include a test that demonstrates the function's maintainability.
+- Include a test that demonstrates the function's reusability.
+- Include a test that demonstrates the function's extensibility.
+- Include a test that demonstrates the function's flexibility.
+- Include a test that demonstrates the function's robustness.
+- Include a test that demonstrates the function's reliability.
+- Include a test that demonstrates the function's security.
+- Include a test that demonstrates the function's privacy.
+- Include a test that demonstrates the function's compliance.
+- Include a test that demonstrates the function's correctness.
+- Include a test that demonstrates the function's efficiency.
+- Include a test that demonstrates the function's effectiveness.
+- Include a test that demonstrates the function's impact.
+- Include a test that demonstrates the function's importance.
+- Include a test that demonstrates the function's significance.
+- Include a test that demonstrates the function's value."
+llama3.2:3b-text-q8_0,3,16,text_lowercase_underscore,FAIL (Assertion/Syntax),0,17.13,256,14.941,150.14,79,0.526,15.487,4.467,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any"
+llama3.2:3b-text-q8_0,4,17,square_perimeter,FAIL (Assertion/Syntax),0,17.2,256,14.882,133.18,70,0.526,15.43,4.502,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function arguments.
+- Do not include any function return statements.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings"
+llama3.2:3b-text-q8_0,5,18,remove_dirty_chars,FAIL (Assertion/Syntax),0,17.16,256,14.917,163.45,71,0.434,15.372,4.537,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any"
+llama3.2:3b-text-q8_0,6,19,test_duplicate,FAIL (Assertion/Syntax),0,17.25,256,14.84,160.65,67,0.417,15.28,4.572,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class test cases.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not"
+llama3.2:3b-text-q8_0,7,20,is_woodall,FAIL (Assertion/Syntax),0,17.33,256,14.775,126.52,70,0.553,15.349,4.606,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class tests.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include"
+llama3.2:3b-text-q8_0,8,56,check,FAIL (Assertion/Syntax),0,17.35,256,14.752,164.35,67,0.408,15.18,4.641,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class methods.
+- Do not include any class attributes.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any"
+llama3.2:3b-text-q8_0,9,57,find_Max_Num,FAIL (Assertion/Syntax),0,17.22,256,14.866,156.01,73,0.468,15.353,4.676,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class test cases.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not"
+llama3.2:3b-text-q8_0,10,58,opposite_Signs,FAIL (Assertion/Syntax),0,16.66,256,15.363,101.18,74,0.731,16.114,4.711,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class test cases.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not"
+llama3.2:3b-text-q8_0,11,59,is_octagonal,FAIL (Assertion/Syntax),0,17.41,256,14.701,136.5,64,0.469,15.19,4.746,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class tests.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include"
+llama3.2:3b-text-q8_0,12,61,count_Substrings,FAIL (Assertion/Syntax),0,17.46,256,14.663,138.27,74,0.535,15.217,4.78,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class decorators.
+- Do not include any class metaclasses.
+- Do not include any class metadatas.
+- Do not include any class metainfo.
+- Do not include any class metatags.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+- Do not include any class metadocs.
+-"
+llama3.2:3b-text-q8_0,13,62,smallest_num,FAIL (Assertion/Syntax),0,17.47,256,14.65,144.93,65,0.449,15.12,4.815,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class methods.
+- Do not include any class attributes.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any"
+llama3.2:3b-text-q8_0,14,63,max_difference,FAIL (Assertion/Syntax),0,17.45,256,14.668,136.07,68,0.5,15.188,4.85,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class test cases.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not"
+llama3.2:3b-text-q8_0,15,64,subject_marks,FAIL (Assertion/Syntax),0,17.43,256,14.686,135.17,68,0.503,15.21,4.884,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any imports.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements.
+- Do not include any docstrings.
+- Do not include any comments.
+- Do not include any print statements."
+llama3.2:3b-text-q8_0,16,65,recursive_list_sum,FAIL (Assertion/Syntax),0,17.41,256,14.702,152.66,67,0.439,15.16,4.919,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,17,66,pos_count,FAIL (Assertion/Syntax),0,17.43,256,14.691,127.07,66,0.519,15.229,4.953,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class methods.
+- Do not include any class attributes.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any"
+llama3.2:3b-text-q8_0,18,67,bell_number,FAIL (Assertion/Syntax),0,17.22,256,14.87,131.54,68,0.517,15.407,4.988,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class decorators.
+- Do not include any class metaclasses.
+- Do not include any class metadefs.
+- Do not include any class metainstances.
+- Do not include any class metavars.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+-"
+llama3.2:3b-text-q8_0,19,68,is_Monotonic,FAIL (Assertion/Syntax),0,16.9,256,15.145,132.52,73,0.551,15.714,5.022,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class literals.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include any class operators.
+- Do not include"
+llama3.2:3b-text-q8_0,20,69,is_sublist,FAIL (Assertion/Syntax),0,16.48,256,15.536,144.42,68,0.471,16.025,5.057,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,21,70,get_equal,FAIL (Assertion/Syntax),0,15.39,256,16.639,140.46,67,0.477,17.134,5.092,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class test cases.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not"
+llama3.2:3b-text-q8_0,22,71,comb_sort,FAIL (Assertion/Syntax),0,15.17,256,16.878,126.65,61,0.482,17.378,5.126,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,23,72,dif_Square,FAIL (Assertion/Syntax),0,14.5,256,17.65,133.67,75,0.561,18.228,5.16,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any function calls.
+- Do not include any variable declarations.
+- Do not include any variable assignments.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any"
+llama3.2:3b-text-q8_0,24,74,is_samepatterns,FAIL (Assertion/Syntax),0,13.89,256,18.429,121.57,69,0.568,19.016,5.195,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,25,75,find_tuples,FAIL (Assertion/Syntax),0,13.09,256,19.552,130.18,71,0.545,20.115,5.23,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class test cases.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not"
+llama3.2:3b-text-q8_0,26,77,is_Diff,FAIL (Assertion/Syntax),0,12.78,256,20.039,117.04,68,0.581,20.639,5.264,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,27,79,word_len,FAIL (Assertion/Syntax),0,13.42,256,19.079,116.98,68,0.581,19.679,5.299,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class methods.
+- Do not include any class attributes.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any"
+llama3.2:3b-text-q8_0,28,80,tetrahedral_number,FAIL (Assertion/Syntax),0,12.46,256,20.538,122.78,67,0.546,21.103,5.333,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class tests.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include"
+llama3.2:3b-text-q8_0,29,82,volume_sphere,FAIL (Assertion/Syntax),0,12.78,256,20.028,113.33,62,0.547,20.593,5.367,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function arguments.
+- Do not include any function bodies.
+- Do not include any function signatures.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+-"
+llama3.2:3b-text-q8_0,30,83,get_Char,FAIL (Assertion/Syntax),0,12.33,256,20.757,115.74,77,0.665,21.441,5.401,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any"
+llama3.2:3b-text-q8_0,31,84,sequence,FAIL (Assertion/Syntax),0,12.49,256,20.495,116.25,65,0.559,21.075,5.437,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class methods.
+- Do not include any class attributes.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any"
+llama3.2:3b-text-q8_0,32,85,surfacearea_sphere,FAIL (Assertion/Syntax),0,13.17,256,19.434,116.53,65,0.558,20.013,5.471,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function arguments.
+- Do not include any function return statements.
+- Do not include any function docstrings.
+- Do not include any function comments.
+- Do not include any function explanations.
+- Do not include any function examples.
+- Do not include any function tests.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not"
+llama3.2:3b-text-q8_0,33,86,centered_hexagonal_number,FAIL (Assertion/Syntax),0,12.68,256,20.196,119.6,68,0.569,20.784,5.505,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,34,87,merge_dictionaries_three,FAIL (Assertion/Syntax),0,12.67,256,20.211,121.7,67,0.551,20.782,5.539,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any import statements.
+- Do not include any variable assignments.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any import statements.
+- Do not include any variable assignments.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any import statements.
+- Do not include any variable assignments.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any import statements.
+- Do not include any variable assignments.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any import statements.
+- Do not include any variable assignments.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any import statements.
+- Do not include any"
+llama3.2:3b-text-q8_0,35,88,freq_count,FAIL (Assertion/Syntax),0,12.71,256,20.138,121.99,71,0.582,20.742,5.574,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class decorators.
+- Do not include any class metaclasses.
+- Do not include any class metadefs.
+- Do not include any class metainstances.
+- Do not include any class metavars.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+- Do not include any class metaclasses.
+-"
+llama3.2:3b-text-q8_0,36,89,closest_num,FAIL (Assertion/Syntax),0,12.68,256,20.197,128.82,63,0.489,20.706,5.609,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any function calls.
+- Do not include any variable declarations.
+- Do not include any variable assignments.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any"
+llama3.2:3b-text-q8_0,37,90,len_log,FAIL (Assertion/Syntax),0,12.9,256,19.838,111.45,64,0.574,20.431,5.643,"- Your function MUST take a list of strings as input.
+- Your function MUST return the length of the longest word in the list.
+- Your function MUST NOT use any loops or conditional statements.
+- Your function MUST NOT use any built-in functions that perform the same task as your function.
+- Your function MUST NOT use any external libraries or modules.
+- Your function MUST NOT use any global variables.
+- Your function MUST NOT use any classes or objects.
+- Your function MUST NOT use any exceptions.
+- Your function MUST NOT use any try-except statements.
+- Your function MUST NOT use any try-finally statements.
+- Your function MUST NOT use any try-catch statements.
+- Your function MUST NOT use any try-else statements.
+- Your function MUST NOT use any try-assert statements.
+- Your function MUST NOT use any try-assert-except statements.
+- Your function MUST NOT use any try-assert-finally statements.
+- Your function MUST NOT use any try-assert-catch statements.
+- Your function MUST NOT use any try-assert-else statements.
+- Your function MUST NOT use any try-assert-assert statements.
+- Your function MUST NOT use any try-assert-assert-except statements.
+- Your function MUST NOT use any try-"
+llama3.2:3b-text-q8_0,38,91,find_substring,FAIL (Assertion/Syntax),0,12.91,256,19.826,114.8,74,0.645,20.488,5.677,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,39,92,is_undulating,FAIL (Assertion/Syntax),0,12.96,256,19.75,114.16,70,0.613,20.383,5.712,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class explanations.
+- Do not include any class examples.
+- Do not include any class tests.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include any class assertions.
+- Do not include"
+llama3.2:3b-text-q8_0,40,93,power,FAIL (Assertion/Syntax),0,13.07,256,19.583,115.48,66,0.572,20.175,5.746,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function arguments.
+- Do not include any function return values.
+- Do not include any function parameters.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings.
+- Do not include any function docstrings."
+llama3.2:3b-text-q8_0,41,94,index_minimum,FAIL (Assertion/Syntax),0,13.36,256,19.155,118.4,74,0.625,19.799,5.78,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any"
+llama3.2:3b-text-q8_0,42,95,Find_Min_Length,FAIL (Assertion/Syntax),0,13.42,256,19.073,128.02,71,0.555,19.645,5.815,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,43,96,divisor,FAIL (Assertion/Syntax),0,13.37,256,19.144,128.8,67,0.52,19.68,5.85,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any"
+llama3.2:3b-text-q8_0,44,97,frequency_lists,FAIL (Assertion/Syntax),0,13.37,256,19.154,114.87,72,0.627,19.8,5.885,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,45,98,multiply_num,FAIL (Assertion/Syntax),0,13.4,256,19.109,124.24,71,0.571,19.701,5.92,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class methods.
+- Do not include any class attributes.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class properties.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any class methods.
+- Do not include any"
+llama3.2:3b-text-q8_0,46,99,decimal_to_binary,FAIL (Assertion/Syntax),0,13.32,256,19.214,113.97,76,0.667,19.901,5.954,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class properties.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,47,100,next_smallest_palindrome,FAIL (Assertion/Syntax),0,13.38,256,19.139,116.54,76,0.652,19.813,5.99,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any function calls.
+- Do not include any variable declarations.
+- Do not include any variable assignments.
+- Do not include any function definitions.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any function calls.
+- Do not include any"
+llama3.2:3b-text-q8_0,48,101,kth_element,FAIL (Assertion/Syntax),0,13.41,256,19.097,116.84,72,0.616,19.734,6.025,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any class definitions.
+- Do not include any class instances.
+- Do not include any class attributes.
+- Do not include any class methods.
+- Do not include any class variables.
+- Do not include any class constants.
+- Do not include any class docstrings.
+- Do not include any class comments.
+- Do not include any class imports.
+- Do not include any class statements.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include any class expressions.
+- Do not include"
+llama3.2:3b-text-q8_0,49,102,snake_to_camel,FAIL (Assertion/Syntax),0,13.06,256,19.602,110.64,69,0.624,20.25,6.06,"- Do not include any comments or docstrings.
+- Do not include any print statements.
+- Do not include any return statements.
+- Do not include any variable declarations.
+- Do not include any function calls.
+- Do not include any function definitions.
+- Do not include any function arguments.
+- Do not include any function return statements.
+- Do not include any function docstrings.
+- Do not include any function comments.
+- Do not include any function explanations.
+- Do not include any function examples.
+- Do not include any function tests.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not include any function assertions.
+- Do not"

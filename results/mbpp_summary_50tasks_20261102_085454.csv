@@ -1,0 +1,4 @@
+Model,Total Tasks,Passed Tasks,MBPP pass@1 (%),Gen Throughput (tok/s),Prompt Eval Speed (tok/s),Avg Latency (s),Peak RSS (GiB)
+llama3.2:3b-text-q8_0,50,0,0.0,14.91,128.28,18.05,6.06
+llama3.2:3b,50,31,62.0,21.28,178.28,3.18,3.84
+llama3.2:1b,50,29,58.0,32.65,398.04,1.4,2.29

@@ -1,0 +1,341 @@
+model,task_index,task_id,function_name,status,passed,eval_rate_tok_sec,eval_count,eval_duration_sec,prompt_eval_rate_tok_sec,prompt_eval_count,prompt_eval_duration_sec,total_duration_sec,rss_gib,generated_code
+llama3.2:3b,0,11,remove_Occ,FAIL (Assertion/Syntax),0,21.2,120,5.661,157.21,95,0.604,6.269,3.075,"def remove_Occ(s, char):
+    s = list(s)
+    first_occurrence = s.index(char)
+    last_occurrence = len(s) - 1 - s[::-1].index(char)
+    s.pop(first_occurrence)
+    s.pop(last_occurrence)
+    return ''.join(s)
+
+# Test the function
+print(remove_Occ(""Hello, World!"", ""l""))
+print(remove_Occ(""Hello, World!"", ""o""))
+print(remove_Occ(""Hello, World!"", ""H""))
+print(remove_Occ(""Hello, World!"", ""d""))"
+llama3.2:3b,1,12,sort_matrix,PASS,1,21.35,23,1.077,180.58,94,0.521,1.614,3.099,"import numpy as np
+
+def sort_matrix(matrix):
+    return sorted(matrix, key=sum)"
+llama3.2:3b,2,14,find_Volume,FAIL (Assertion/Syntax),0,21.0,231,11.002,186.09,90,0.484,11.494,3.107,"import math
+
+def find_Volume(base_area, height, side_length):
+    """"""
+    Calculate the volume of a triangular prism.
+
+    Parameters:
+    base_area (float): The area of the base triangle.
+    height (float): The height of the prism.
+    side_length (float): The length of one side of the base triangle.
+
+    Returns:
+    float: The volume of the triangular prism.
+    """"""
+    # Calculate the semi-perimeter of the base triangle
+    s = (side_length + math.sqrt(side_length**2 - 4*base_area/3) + math.sqrt(side_length**2 - 4*base_area/3)) / 2
+    
+    # Calculate the area of the base triangle using Heron's formula
+    base_area_heron = math.sqrt(s*(s-side_length)*(s-math.sqrt(side_length**2 - 4*base_area/3))*(s-math.sqrt(side_length**2 - 4*base_area/3)))
+    
+    # Calculate the volume of the triangular prism
+    volume = base_area_heron * height
+    
+    return volume"
+llama3.2:3b,3,16,text_lowercase_underscore,FAIL (Assertion/Syntax),0,20.63,28,1.357,171.49,103,0.601,1.979,3.141,"import re
+
+def text_lowercase_underscore(text):
+    return bool(re.search(r'[a-z]+_', text))"
+llama3.2:3b,4,17,square_perimeter,PASS,1,20.39,66,3.237,177.02,94,0.531,3.778,3.155,"def square_perimeter(side_length):
+    """"""
+    Calculate the perimeter of a square given its side length.
+
+    Args:
+        side_length (float): The length of a side of the square.
+
+    Returns:
+        float: The perimeter of the square.
+    """"""
+    return 4 * side_length"
+llama3.2:3b,5,18,remove_dirty_chars,PASS,1,20.63,95,4.606,176.29,95,0.539,5.157,3.173,"def remove_dirty_chars(dirty_string, clean_string):
+    """"""
+    Removes characters from the first string which are present in the second string.
+
+    Args:
+        dirty_string (str): The string from which characters will be removed.
+        clean_string (str): The string containing characters to be removed.
+
+    Returns:
+        str: The cleaned string.
+    """"""
+    return ''.join([char for char in dirty_string if char not in clean_string])"
+llama3.2:3b,6,19,test_duplicate,PASS,1,21.56,73,3.385,180.82,91,0.503,3.902,3.193,"def test_duplicate(arr):
+    return len(arr) != len(set(arr))
+
+# Test the function
+print(test_duplicate([1, 2, 3, 4, 5]))  # Should return False
+print(test_duplicate([1, 2, 2, 4, 5]))  # Should return True"
+llama3.2:3b,7,20,is_woodall,PASS,1,20.74,26,1.254,180.01,94,0.522,1.788,3.211,"def is_woodall(n):
+    s = str(n)
+    return s == s[::-1]"
+llama3.2:3b,8,56,check,FAIL (Assertion/Syntax),0,20.58,25,1.215,181.57,91,0.501,1.726,3.224,"def check(n):
+    return str(n) == str(n)[::-1] + 1"
+llama3.2:3b,9,57,find_Max_Num,PASS,1,20.95,77,3.676,168.33,97,0.576,4.262,3.236,"import itertools
+
+def find_Max_Num(digits):
+    max_num = 0
+    for r in range(1, len(digits) + 1):
+        for perm in itertools.permutations(digits, r):
+            num = int(''.join(map(str, perm)))
+            if num > max_num:
+                max_num = num
+    return max_num"
+llama3.2:3b,10,58,opposite_Signs,PASS,1,21.25,25,1.176,177.69,98,0.552,1.742,3.255,"def opposite_Signs(a, b):
+    return (a * b) < 0"
+llama3.2:3b,11,59,is_octagonal,FAIL (Assertion/Syntax),0,20.75,40,1.927,172.55,88,0.51,2.447,3.268,"import math
+
+def is_octagonal(n):
+    x = (1 + math.sqrt(1 + 8*n)) / 4
+    return x == int(x)"
+llama3.2:3b,12,61,count_Substrings,PASS,1,21.29,76,3.569,179.07,98,0.547,4.127,3.282,"def count_Substrings(s):
+    count = 0
+    for i in range(len(s)):
+        for j in range(i + 1, len(s) + 1):
+            substring = s[i:j]
+            if sum(int(digit) for digit in substring) == len(substring):
+                count += 1
+    return count"
+llama3.2:3b,13,62,smallest_num,PASS,1,21.68,15,0.692,174.48,89,0.51,1.215,3.301,"def smallest_num(lst):
+    return min(lst)"
+llama3.2:3b,14,63,max_difference,FAIL (Assertion/Syntax),0,20.12,98,4.871,182.24,92,0.505,5.386,3.312,"def max_difference(tuples_list):
+    if not tuples_list:
+        return 0
+
+    max_diff = 0
+    min_val = min(tuples_list[0])
+
+    for tup in tuples_list[1:]:
+        if tup[0] > min_val:
+            min_val = tup[0]
+        if tup[1] - min_val > max_diff:
+            max_diff = tup[1] - min_val
+
+    return max_diff"
+llama3.2:3b,15,64,subject_marks,PASS,1,21.49,72,3.35,174.86,92,0.526,3.897,3.333,"def subject_marks(tuples_list):
+    return sorted(tuples_list, key=lambda x: x[1])
+
+# Example usage:
+tuples_list = [(1, 10), (2, 5), (3, 15), (4, 3)]
+sorted_tuples = subject_marks(tuples_list)
+print(sorted_tuples)"
+llama3.2:3b,16,65,recursive_list_sum,FAIL (Assertion/Syntax),0,21.35,80,3.748,183.19,91,0.497,4.26,3.35,"def recursive_list_sum(lst):
+    if not isinstance(lst, list):
+        return lst
+    else:
+        return lst[0] + recursive_list_sum(lst[1:])
+
+# Test the function
+print(recursive_list_sum([1, 2, [3, 4], [5, [6, 7]]]))  # Output: 28"
+llama3.2:3b,17,66,pos_count,PASS,1,21.24,25,1.177,183.37,90,0.491,1.683,3.369,"def pos_count(lst):
+    return sum(1 for num in lst if num > 0)"
+llama3.2:3b,18,67,bell_number,PASS,1,21.86,134,6.129,180.16,92,0.511,6.649,3.381,"import math
+
+def bell_number(n):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 1
+    else:
+        bell = [0] * (n + 1)
+        bell[0] = 1
+        bell[1] = 1
+        for i in range(2, n + 1):
+            for j in range(i):
+                bell[i] += bell[j] * math.comb(i - 1, j)
+        return bell[n]
+
+# Test the function
+print(bell_number(5))  # Output: 52"
+llama3.2:3b,19,68,is_Monotonic,PASS,1,21.34,72,3.374,175.23,97,0.554,3.943,3.405,"def is_Monotonic(arr):
+    increasing = decreasing = True
+
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i + 1]:
+            increasing = False
+        if arr[i] < arr[i + 1]:
+            decreasing = False
+
+    return increasing or decreasing"
+llama3.2:3b,20,69,is_sublist,PASS,1,21.52,70,3.253,186.6,92,0.493,3.759,3.424,"def is_sublist(main_list, sub_list):
+    if len(sub_list) > len(main_list):
+        return False
+    for i in range(len(main_list) - len(sub_list) + 1):
+        if main_list[i:i+len(sub_list)] == sub_list:
+            return True
+    return False"
+llama3.2:3b,21,70,get_equal,FAIL (Assertion/Syntax),0,21.2,52,2.452,180.91,91,0.503,2.968,3.441,"def get_equal(*tuples):
+    if not tuples:
+        return True
+    length = len(tuples[0])
+    for t in tuples:
+        if len(t) != length:
+            return False
+    return True"
+llama3.2:3b,22,71,comb_sort,PASS,1,21.98,107,4.868,178.81,85,0.475,5.353,3.457,"def comb_sort(arr):
+    n = len(arr)
+    gap = n
+    swapped = True
+
+    while gap != 1 or swapped:
+        gap = max(1, int(gap / 1.3))
+        swapped = False
+
+        for i in range(0, n - gap):
+            j = i + gap
+            if arr[i] > arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]
+                swapped = True
+
+    return arr"
+llama3.2:3b,23,72,dif_Square,FAIL (Assertion/Syntax),0,21.32,56,2.627,174.91,99,0.566,3.207,3.477,"import math
+
+def dif_Square(n):
+    for i in range(1, int(math.sqrt(n)) + 1):
+        if math.sqrt(i * i - n) % 1 == 0:
+            return True
+    return False"
+llama3.2:3b,24,74,is_samepatterns,FAIL (Assertion/Syntax),0,21.88,110,5.029,179.84,93,0.517,5.557,3.494,"def is_samepatterns(patterns):
+    def is_valid(pattern, s):
+        if len(pattern) != len(s):
+            return False
+        mapping = {}
+        for p, c in zip(pattern, s):
+            if p not in mapping:
+                mapping[p] = c
+            elif mapping[p] != c:
+                return False
+        return True
+
+    for pattern in patterns:
+        for s in patterns:
+            if s != pattern and is_valid(pattern, s):
+                return False
+    return True"
+llama3.2:3b,25,75,find_tuples,FAIL (Assertion/Syntax),0,22.14,124,5.601,178.96,95,0.531,6.146,3.516,"def find_tuples(lst, k):
+    return [(t[0], t[1]) for t in lst if all(i % k == 0 for i in t)]
+
+# Example usage:
+tuples = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10)]
+k = 2
+print(find_tuples(tuples, k))  # Output: [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10)]"
+llama3.2:3b,26,77,is_Diff,PASS,1,21.53,21,0.975,182.86,92,0.503,1.494,3.539,"def is_Diff(num):
+    return num % 11 == 0"
+llama3.2:3b,27,79,word_len,PASS,1,21.4,22,1.028,178.52,92,0.515,1.553,3.552,"def word_len(word):
+    return len(word) % 2 != 0"
+llama3.2:3b,28,80,tetrahedral_number,PASS,1,20.99,29,1.382,182.73,91,0.498,1.888,3.564,"import math
+
+def tetrahedral_number(n):
+    return n*(n+1)*(n+2)//6"
+llama3.2:3b,29,82,volume_sphere,PASS,1,21.33,71,3.328,179.17,86,0.48,3.818,3.577,"import math
+
+def volume_sphere(radius):
+    """"""
+    Calculate the volume of a sphere given its radius.
+
+    Args:
+        radius (float): The radius of the sphere.
+
+    Returns:
+        float: The volume of the sphere.
+    """"""
+    return (4/3) * math.pi * (radius ** 3)"
+llama3.2:3b,30,83,get_Char,FAIL (Assertion/Syntax),0,20.86,36,1.726,174.48,101,0.579,2.317,3.594,"def get_Char(s):
+    char_value = sum(ord(c) for c in s)
+    return chr(char_value % 26 + ord('a'))"
+llama3.2:3b,31,84,sequence,FAIL (Assertion/Syntax),0,21.93,89,4.059,177.56,89,0.501,4.571,3.608,"def sequence(n):
+    if n <= 0:
+        return ""Input should be a positive integer""
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        a, b = 0, 1
+        for _ in range(2, n):
+            a, b = b, a + b
+        return b"
+llama3.2:3b,32,85,surfacearea_sphere,PASS,1,21.38,28,1.31,176.77,89,0.503,1.826,3.627,"import math
+
+def surfacearea_sphere(radius):
+    return 4 * math.pi * (radius ** 2)"
+llama3.2:3b,33,86,centered_hexagonal_number,FAIL (Assertion/Syntax),0,21.08,29,1.376,179.5,92,0.513,1.898,3.64,"import math
+
+def centered_hexagonal_number(n):
+    return (3*n**2 - n) // 2"
+llama3.2:3b,34,87,merge_dictionaries_three,FAIL (Assertion/Syntax),0,21.11,34,1.611,183.79,91,0.495,2.115,3.653,"def merge_dictionaries_three(dict1, dict2, dict3):
+    return {**dict1, **dict2, **dict3}"
+llama3.2:3b,35,88,freq_count,PASS,1,21.75,22,1.011,179.7,95,0.529,1.549,3.666,"from collections import Counter
+
+def freq_count(lst):
+    return dict(Counter(lst))"
+llama3.2:3b,36,89,closest_num,FAIL (Assertion/Syntax),0,21.53,20,0.929,177.33,87,0.491,1.427,3.678,"def closest_num(n):
+    return n - (n % 1)"
+llama3.2:3b,37,90,len_log,PASS,1,21.66,21,0.969,178.08,88,0.494,1.471,3.69,"def len_log(lst):
+    return max(len(word) for word in lst)"
+llama3.2:3b,38,91,find_substring,PASS,1,20.94,37,1.767,176.48,98,0.555,2.33,3.684,"def find_substring(string_list, target_string):
+    for string in string_list:
+        if target_string in string:
+            return True
+    return False"
+llama3.2:3b,39,92,is_undulating,PASS,1,21.27,49,2.304,179.74,94,0.523,2.839,3.698,"def is_undulating(n):
+    n = str(n)
+    for i in range(len(n) - 1):
+        if n[i] == n[i+1]:
+            return False
+    return True"
+llama3.2:3b,40,93,power,PASS,1,21.44,20,0.933,186.24,90,0.483,1.426,3.713,"import math
+
+def power(a, b):
+    return a ** b"
+llama3.2:3b,41,94,index_minimum,FAIL (Assertion/Syntax),0,21.36,26,1.217,177.88,98,0.551,1.777,3.725,"def index_minimum(lst):
+    return min(range(len(lst)), key=lambda i: lst[i][1])"
+llama3.2:3b,42,95,Find_Min_Length,PASS,1,21.33,24,1.125,177.17,95,0.536,1.671,3.738,"def Find_Min_Length(lists):
+    return min(len(sublist) for sublist in lists)"
+llama3.2:3b,43,96,divisor,PASS,1,21.82,71,3.254,183.78,91,0.495,3.757,3.751,"import math
+
+def divisor(n):
+    count = 0
+    for i in range(1, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            if n // i == i:
+                count += 1
+            else:
+                count += 2
+    return count"
+llama3.2:3b,44,97,frequency_lists,PASS,1,21.27,31,1.457,175.77,96,0.546,2.015,3.768,"from collections import Counter
+
+def frequency_lists(lst):
+    return dict(Counter([item for sublist in lst for item in sublist]))"
+llama3.2:3b,45,98,multiply_num,PASS,1,21.16,34,1.607,179.9,95,0.528,2.144,3.781,"def multiply_num(lst):
+    product = 1
+    for num in lst:
+        product *= num
+    return product / len(lst)"
+llama3.2:3b,46,99,decimal_to_binary,PASS,1,21.56,69,3.2,175.59,100,0.57,3.779,3.795,"def decimal_to_binary(n):
+    return bin(n)[2:]
+
+# Test the function
+print(decimal_to_binary(10))  # Output: 1010
+print(decimal_to_binary(25))  # Output: 11001
+print(decimal_to_binary(100))  # Output: 1100100"
+llama3.2:3b,47,100,next_smallest_palindrome,PASS,1,21.36,56,2.622,173.38,100,0.577,3.211,3.813,"def next_smallest_palindrome(n):
+    def is_palindrome(num):
+        return str(num) == str(num)[::-1]
+
+    n += 1
+    while not is_palindrome(n):
+        n += 1
+    return n"
+llama3.2:3b,48,101,kth_element,FAIL (Assertion/Syntax),0,21.41,22,1.027,175.18,96,0.548,1.587,3.83,"def kth_element(arr, k):
+    return sorted(arr)[k-1]"
+llama3.2:3b,49,102,snake_to_camel,FAIL (Assertion/Syntax),0,20.94,38,1.815,180.25,93,0.516,2.34,3.842,"def snake_to_camel(s):
+    words = s.split('_')
+    return words[0] + ''.join(word.capitalize() for word in words[1:])"

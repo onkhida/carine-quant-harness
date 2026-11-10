@@ -1,0 +1,380 @@
+model,task_index,task_id,function_name,status,passed,eval_rate_tok_sec,eval_count,eval_duration_sec,prompt_eval_rate_tok_sec,prompt_eval_count,prompt_eval_duration_sec,total_duration_sec,rss_gib,generated_code
+llama3.2:3b-instruct-q8_0,0,11,remove_Occ,FAIL (Assertion/Syntax),0,16.54,157,9.492,160.49,95,0.592,10.086,5.373,"def remove_Occ(s, c):
+    s = list(s)
+    i = 0
+    while i < len(s) - 1 and s[i] == c:
+        i += 1
+    if i < len(s) - 1:
+        s.pop(i)
+    i = len(s) - 1
+    while i > 0 and s[i] == c:
+        i -= 1
+    if i > 0:
+        s.pop(i)
+    return ''.join(s)
+
+# Test the function
+print(remove_Occ(""Hello, World!"", 'l'))  # Output: ""Heo, Word!""
+print(remove_Occ(""Mississippi"", 's'))  # Output: ""Mippi"""
+llama3.2:3b-instruct-q8_0,1,12,sort_matrix,PASS,1,16.1,23,1.428,192.89,94,0.487,1.931,5.4,"import numpy as np
+
+def sort_matrix(matrix):
+    return sorted(matrix, key=sum)"
+llama3.2:3b-instruct-q8_0,2,14,find_Volume,FAIL (Assertion/Syntax),0,16.41,140,8.531,141.28,90,0.637,9.178,5.412,"import math
+
+def find_Volume(base_area, height):
+    """"""
+    This function calculates the volume of a triangular prism.
+
+    Parameters:
+    base_area (float): The area of the base triangle.
+    height (float): The height of the prism.
+
+    Returns:
+    float: The volume of the triangular prism.
+    """"""
+    volume = 0.5 * base_area * height
+    return volume
+
+# Example usage:
+base_area = 10  # in square units
+height = 5  # in units
+volume = find_Volume(base_area, height)
+print(""The volume of the triangular prism is:"", volume, ""cubic units."")"
+llama3.2:3b-instruct-q8_0,3,16,text_lowercase_underscore,FAIL (Assertion/Syntax),0,17.38,28,1.611,153.5,103,0.671,2.298,5.437,"import re
+
+def text_lowercase_underscore(text):
+    return bool(re.search(r'[a-z]+_', text))"
+llama3.2:3b-instruct-q8_0,4,17,square_perimeter,PASS,1,15.1,66,4.372,135.67,94,0.693,5.076,5.923,"def square_perimeter(side_length):
+    """"""
+    Returns the perimeter of a square given its side length.
+
+    Args:
+        side_length (float): The length of a side of the square.
+
+    Returns:
+        float: The perimeter of the square.
+    """"""
+    return side_length * 4"
+llama3.2:3b-instruct-q8_0,5,18,remove_dirty_chars,PASS,1,13.3,32,2.407,99.88,95,0.951,3.373,6.151,"def remove_dirty_chars(s1, s2):
+    return ''.join(c for c in s1 if c not in s2)"
+llama3.2:3b-instruct-q8_0,6,19,test_duplicate,PASS,1,13.63,73,5.354,119.34,91,0.763,6.131,6.229,"def test_duplicate(arr):
+    return len(arr) != len(set(arr))
+
+# Test the function
+print(test_duplicate([1, 2, 3, 4, 5]))  # Should return False
+print(test_duplicate([1, 2, 3, 4, 4]))  # Should return True"
+llama3.2:3b-instruct-q8_0,7,20,is_woodall,PASS,1,14.49,26,1.794,171.12,94,0.549,2.356,5.499,"def is_woodall(n):
+    s = str(n)
+    return s == s[::-1]"
+llama3.2:3b-instruct-q8_0,8,56,check,FAIL (Assertion/Syntax),0,13.77,25,1.816,162.58,91,0.56,2.387,5.512,"def check(n):
+    return str(n) == str(n)[::-1] - 1"
+llama3.2:3b-instruct-q8_0,9,57,find_Max_Num,PASS,1,15.52,75,4.832,153.86,97,0.63,5.471,5.525,"from itertools import permutations
+
+def find_Max_Num(digits):
+    max_num = float('-inf')
+    for r in range(1, len(digits) + 1):
+        for perm in permutations(digits, r):
+            num = int(''.join(map(str, perm)))
+            max_num = max(max_num, num)
+    return max_num"
+llama3.2:3b-instruct-q8_0,10,58,opposite_Signs,PASS,1,13.89,25,1.8,146.56,98,0.669,2.486,5.543,"def opposite_Signs(a, b):
+    return (a * b) < 0"
+llama3.2:3b-instruct-q8_0,11,59,is_octagonal,FAIL (Assertion/Syntax),0,15.11,32,2.118,149.83,88,0.587,2.716,5.557,"import math
+
+def is_octagonal(n):
+    return math.sqrt(8*n + 1) % 1 == 0"
+llama3.2:3b-instruct-q8_0,12,61,count_Substrings,PASS,1,15.35,69,4.495,141.41,98,0.693,5.199,5.57,"def count_Substrings(s):
+    count = 0
+    for i in range(len(s)):
+        total = 0
+        for j in range(i, len(s)):
+            total += int(s[j])
+            if total == j - i + 1:
+                count += 1
+    return count"
+llama3.2:3b-instruct-q8_0,13,62,smallest_num,PASS,1,14.62,15,1.026,177.95,89,0.5,1.537,5.588,"def smallest_num(lst):
+    return min(lst)"
+llama3.2:3b-instruct-q8_0,14,63,max_difference,FAIL (Assertion/Syntax),0,16.35,97,5.932,171.62,92,0.536,6.477,5.599,"def max_difference(pairs):
+    if len(pairs) < 2:
+        return 0
+
+    max_diff = 0
+    min_val = pairs[0][0]
+
+    for pair in pairs:
+        if pair[0] < min_val:
+            min_val = pair[0]
+        if pair[1] - min_val > max_diff:
+            max_diff = pair[1] - min_val
+
+    return max_diff"
+llama3.2:3b-instruct-q8_0,15,64,subject_marks,PASS,1,16.45,72,4.378,106.42,92,0.864,5.257,5.619,"def subject_marks(tuples_list):
+    return sorted(tuples_list, key=lambda x: x[1])
+
+# Example usage:
+tuples_list = [(1, 10), (2, 5), (3, 15), (4, 8)]
+sorted_tuples = subject_marks(tuples_list)
+print(sorted_tuples)"
+llama3.2:3b-instruct-q8_0,16,65,recursive_list_sum,FAIL (Assertion/Syntax),0,16.58,83,5.006,188.26,91,0.483,5.503,5.637,"def recursive_list_sum(lst):
+    if not isinstance(lst, list):
+        return lst
+    else:
+        return recursive_list_sum(lst[0]) + recursive_list_sum(lst[1:])
+
+# Test the function
+print(recursive_list_sum([1, 2, [3, 4], [5, [6, 7]]]))  # Output: 28"
+llama3.2:3b-instruct-q8_0,17,66,pos_count,PASS,1,15.91,25,1.571,200.36,90,0.449,2.033,5.656,"def pos_count(lst):
+    return sum(1 for num in lst if num > 0)"
+llama3.2:3b-instruct-q8_0,18,67,bell_number,FAIL (Assertion/Syntax),0,14.72,113,7.675,158.76,92,0.58,8.265,5.668,"import math
+
+def bell_number(n):
+    if n == 0:
+        return 1
+    else:
+        bell = [0] * (n + 1)
+        bell[0] = 1
+        for i in range(1, n + 1):
+            sum = 0
+            for j in range(i):
+                sum += bell[j]
+            bell[i] = sum
+        return bell[n]
+
+# Test the function
+print(bell_number(5))  # Output: 52"
+llama3.2:3b-instruct-q8_0,19,68,is_Monotonic,PASS,1,17.02,72,4.23,124.65,97,0.778,5.022,5.69,"def is_Monotonic(nums):
+    increasing = decreasing = True
+
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i + 1]:
+            increasing = False
+        if nums[i] < nums[i + 1]:
+            decreasing = False
+
+    return increasing or decreasing"
+llama3.2:3b-instruct-q8_0,20,69,is_sublist,FAIL (Assertion/Syntax),0,16.49,192,11.641,167.66,92,0.549,12.201,5.709,"def is_sublist(main_list, sub_list):
+    """"""
+    Checks whether a list contains the given sublist or not.
+
+    Args:
+        main_list (list): The main list to be checked.
+        sub_list (list): The sublist to be searched.
+
+    Returns:
+        bool: True if the sublist is found in the main list, False otherwise.
+    """"""
+    # Check if the sub_list is a sublist of the main_list
+    return sub_list in main_list
+
+# Example usage:
+main_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+sub_list = [4, 5, 6]
+print(is_sublist(main_list, sub_list))  # Output: True
+
+sub_list = [10, 11, 12]
+print(is_sublist(main_list, sub_list))  # Output: False"
+llama3.2:3b-instruct-q8_0,21,70,get_equal,FAIL (Assertion/Syntax),0,15.52,25,1.611,167.25,91,0.544,2.175,5.739,"def get_equal(*tuples):
+    return len(set(map(len, tuples))) == 1"
+llama3.2:3b-instruct-q8_0,22,71,comb_sort,PASS,1,15.91,107,6.727,152.61,85,0.557,7.294,5.752,"def comb_sort(arr):
+    n = len(arr)
+    gap = n
+    swapped = True
+
+    while gap != 1 or swapped:
+        gap = max(1, int(gap / 1.3))
+        swapped = False
+
+        for i in range(0, n - gap):
+            j = i + gap
+            if arr[i] > arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]
+                swapped = True
+
+    return arr"
+llama3.2:3b-instruct-q8_0,23,72,dif_Square,PASS,1,16.64,68,4.087,132.53,99,0.747,4.848,5.768,"import math
+
+def dif_Square(n):
+    if n < 0:
+        return False
+    for i in range(1, int(math.sqrt(n)) + 1):
+        j = math.sqrt(i * i + n)
+        if j == int(j):
+            return True
+    return False"
+llama3.2:3b-instruct-q8_0,24,74,is_samepatterns,FAIL (Assertion/Syntax),0,17.23,118,6.848,171.53,93,0.542,7.401,5.785,"def is_samepatterns(patterns):
+    def is_valid(pattern, s):
+        if len(pattern) != len(s):
+            return False
+        for i in range(len(pattern)):
+            if pattern[i] == '1':
+                if s[i] != '1':
+                    return False
+            else:
+                if s[i] == '1':
+                    return False
+        return True
+
+    for pattern in patterns:
+        if not is_valid(pattern, pattern.replace('1', '#').replace('0', '1')):
+            return False
+    return True"
+llama3.2:3b-instruct-q8_0,25,75,find_tuples,PASS,1,16.74,85,5.078,140.49,95,0.676,5.768,5.808,"def find_tuples(tuples_list, k):
+    return [t for t in tuples_list if all(i % k == 0 for i in t)]
+
+# Example usage:
+tuples_list = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+k = 3
+print(find_tuples(tuples_list, k))"
+llama3.2:3b-instruct-q8_0,26,77,is_Diff,PASS,1,15.7,21,1.337,169.69,92,0.542,1.892,5.827,"def is_Diff(num):
+    return num % 11 == 0"
+llama3.2:3b-instruct-q8_0,27,79,word_len,PASS,1,15.31,22,1.437,158.63,92,0.58,2.028,5.839,"def word_len(word):
+    return len(word) % 2 != 0"
+llama3.2:3b-instruct-q8_0,28,80,tetrahedral_number,PASS,1,15.96,36,2.256,182.44,91,0.499,2.764,5.851,"import math
+
+def tetrahedral_number(n):
+    return n * (n + 1) * (n + 2) // 6"
+llama3.2:3b-instruct-q8_0,29,82,volume_sphere,PASS,1,16.58,108,6.513,165.76,86,0.519,7.042,5.865,"import math
+
+def volume_sphere(radius):
+    """"""
+    Calculate the volume of a sphere given its radius.
+
+    Args:
+        radius (float): The radius of the sphere.
+
+    Returns:
+        float: The volume of the sphere.
+    """"""
+    return (4/3) * math.pi * (radius ** 3)
+
+# Example usage:
+radius = 5
+volume = volume_sphere(radius)
+print(f""The volume of the sphere with radius {radius} is {volume:.2f} cubic units."")"
+llama3.2:3b-instruct-q8_0,30,83,get_Char,FAIL (Assertion/Syntax),0,16.91,34,2.011,180.37,101,0.56,2.586,5.886,"def get_Char(s):
+    total = sum(ord(c) for c in s)
+    return chr(total % 26 + ord('a'))"
+llama3.2:3b-instruct-q8_0,31,84,sequence,FAIL (Assertion/Syntax),0,17.14,89,5.193,168.31,89,0.529,5.731,4.939,"def sequence(n):
+    if n <= 0:
+        return ""Input should be a positive integer""
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        a, b = 0, 1
+        for _ in range(2, n):
+            a, b = b, a + b
+        return b"
+llama3.2:3b-instruct-q8_0,32,85,surfacearea_sphere,PASS,1,17.25,28,1.624,185.49,89,0.48,2.118,4.946,"import math
+
+def surfacearea_sphere(radius):
+    return 4 * math.pi * (radius ** 2)"
+llama3.2:3b-instruct-q8_0,33,86,centered_hexagonal_number,FAIL (Assertion/Syntax),0,16.44,34,2.068,166.85,92,0.551,2.629,4.958,"import math
+
+def centered_hexagonal_number(n):
+    return (3*n**2 - 3*n + 1) // 2"
+llama3.2:3b-instruct-q8_0,34,87,merge_dictionaries_three,PASS,1,16.92,139,8.215,145.81,91,0.624,8.85,4.971,"def merge_dictionaries_three(dict1, dict2, dict3):
+    """"""
+    Merge three dictionaries into a single dictionary.
+
+    Args:
+        dict1 (dict): The first dictionary to merge.
+        dict2 (dict): The second dictionary to merge.
+        dict3 (dict): The third dictionary to merge.
+
+    Returns:
+        dict: A new dictionary containing all key-value pairs from the input dictionaries.
+    """"""
+    merged_dict = {}
+    for dictionary in [dict1, dict2, dict3]:
+        for key, value in dictionary.items():
+            if key not in merged_dict:
+                merged_dict[key] = value
+    return merged_dict"
+llama3.2:3b-instruct-q8_0,35,88,freq_count,PASS,1,14.57,22,1.51,143.22,95,0.663,2.193,4.996,"from collections import Counter
+
+def freq_count(lst):
+    return dict(Counter(lst))"
+llama3.2:3b-instruct-q8_0,36,89,closest_num,FAIL (Assertion/Syntax),0,14.57,20,1.372,114.02,87,0.763,2.145,5.008,"def closest_num(n):
+    return n - (n % 2)"
+llama3.2:3b-instruct-q8_0,37,90,len_log,PASS,1,15.42,21,1.362,179.29,88,0.491,1.862,5.02,"def len_log(lst):
+    return max(len(word) for word in lst)"
+llama3.2:3b-instruct-q8_0,38,91,find_substring,PASS,1,16.74,174,10.395,186.97,98,0.524,10.929,5.031,"def find_substring(string_list, target_string):
+    """"""
+    This function checks if a target string is present as a substring in a given list of string values.
+
+    Args:
+        string_list (list): A list of string values.
+        target_string (str): The target string to be searched.
+
+    Returns:
+        bool: True if the target string is found as a substring, False otherwise.
+    """"""
+    for string in string_list:
+        if target_string in string:
+            return True
+    return False
+
+# Example usage:
+string_list = [""Hello World"", ""Python Programming"", ""Substring Example""]
+target_string = ""Substring""
+print(find_substring(string_list, target_string))  # Output: True
+
+target_string = ""Not Found""
+print(find_substring(string_list, target_string))  # Output: False"
+llama3.2:3b-instruct-q8_0,39,92,is_undulating,FAIL (Assertion/Syntax),0,16.86,80,4.746,180.19,94,0.522,5.285,5.06,"def is_undulating(n):
+    if n < 0:
+        return False
+    digits = [int(d) for d in str(n)]
+    for i in range(1, len(digits)):
+        if digits[i] != digits[i-1] and digits[i] != digits[i-1] + 1:
+            return False
+    return True"
+llama3.2:3b-instruct-q8_0,40,93,power,PASS,1,15.96,17,1.065,200.8,90,0.448,1.526,5.079,"def power(a, b):
+    return a ** b"
+llama3.2:3b-instruct-q8_0,41,94,index_minimum,FAIL (Assertion/Syntax),0,15.78,31,1.964,189.31,98,0.518,2.491,5.09,"def index_minimum(tuples_list):
+    return min(range(len(tuples_list)), key=lambda i: tuples_list[i][1])"
+llama3.2:3b-instruct-q8_0,42,95,Find_Min_Length,PASS,1,15.43,24,1.555,168.02,95,0.565,2.13,5.104,"def Find_Min_Length(lists):
+    return min(len(sublist) for sublist in lists)"
+llama3.2:3b-instruct-q8_0,43,96,divisor,PASS,1,16.4,47,2.865,147.04,91,0.619,3.493,5.116,"def divisor(n):
+    count = 0
+    for i in range(1, n + 1):
+        if n % i == 0:
+            count += 1
+    return count"
+llama3.2:3b-instruct-q8_0,44,97,frequency_lists,PASS,1,16.24,71,4.371,133.91,96,0.717,5.098,5.131,"def frequency_lists(lists):
+    flat_list = [item for sublist in lists for item in sublist]
+    frequency_dict = {}
+    for item in flat_list:
+        if item in frequency_dict:
+            frequency_dict[item] += 1
+        else:
+            frequency_dict[item] = 1
+    return frequency_dict"
+llama3.2:3b-instruct-q8_0,45,98,multiply_num,PASS,1,15.79,34,2.153,137.44,95,0.691,2.856,5.149,"def multiply_num(lst):
+    product = 1
+    for num in lst:
+        product *= num
+    return product / len(lst)"
+llama3.2:3b-instruct-q8_0,46,99,decimal_to_binary,PASS,1,16.26,72,4.428,175.28,100,0.571,5.009,5.162,"def decimal_to_binary(n):
+    return bin(n).replace(""0b"", """")
+
+# Test the function
+print(decimal_to_binary(10))  # Output: 1010
+print(decimal_to_binary(20))  # Output: 10100
+print(decimal_to_binary(30))  # Output: 11110"
+llama3.2:3b-instruct-q8_0,47,100,next_smallest_palindrome,PASS,1,16.54,56,3.386,148.41,100,0.674,4.073,5.181,"def next_smallest_palindrome(n):
+    def is_palindrome(num):
+        return str(num) == str(num)[::-1]
+
+    n += 1
+    while not is_palindrome(n):
+        n += 1
+    return n"
+llama3.2:3b-instruct-q8_0,48,101,kth_element,FAIL (Assertion/Syntax),0,15.97,23,1.44,137.32,96,0.699,2.151,5.197,"def kth_element(arr, k):
+    return sorted(arr)[k - 1]"
+llama3.2:3b-instruct-q8_0,49,102,snake_to_camel,FAIL (Assertion/Syntax),0,16.63,38,2.285,180.82,93,0.514,2.81,5.21,"def snake_to_camel(s):
+    components = s.split('_')
+    return components[0] + ''.join(x.title() for x in components[1:])"
